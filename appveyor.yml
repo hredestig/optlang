@@ -33,9 +33,7 @@ install:
   - ps: Start-FileDownload 'https://bitbucket.org/gutworth/six/raw/default/six.py'
   - "%WITH_COMPILER% %PYTHON%/python appveyor/build_glpk.py"
   - "%PYTHON%/python -m pip install pip setuptools wheel --upgrade"
-  - "%PYTHON%/python -m pip install --upgrade pytest"
-  - "%PYTHON%/python -m pip install pytest-cov pytest-benchmark"
-  - "%PYTHON%/python -m pip install nose rednose swiglpk coverage jsonschema numpy scipy"
+  - "%PYTHON%/python -m pip install nose rednose swiglpk coverage jsonschema numpy"
 
 
 build: off
