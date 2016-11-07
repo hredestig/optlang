@@ -39,5 +39,4 @@ install:
 build: off
 
 test_script:
-  - "%WITH_COMPILER% %PYTHON%/python setup.py develop"
-  - "%WITH_COMPILER% %PYTHON%/nosetests"
+  - "%WITH_COMPILER% %PYTHON%/python setup.py test"
